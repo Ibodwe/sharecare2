@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:context=".user.signup.SignUpSecondScreen">
+
+
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+
+            <ImageView
+                android:layout_width="@dimen/logo_w_h"
+                android:layout_height="@dimen/logo_w_h"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/peercare" />
+
+
+            <Button
+                android:id="@+id/personal_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:text="Personal Information" />
+
+            <Button
+                android:id="@+id/account_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:text="Account Information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                >
+
+                <CheckBox
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" I Agree with terms and conditions"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/finish"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:text="finish" />
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

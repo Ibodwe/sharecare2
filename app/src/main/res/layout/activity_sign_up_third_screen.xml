@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.signup.SignUpSecondScreen">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:layout_marginBottom="25dp"
+        android:textStyle="italic"
+        android:theme="@style/MyActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="@dimen/activity_horizontal_margin">
+
+
+            <ImageView
+                android:layout_width="@dimen/logo_w_h"
+                android:layout_height="@dimen/logo_w_h"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/peercare" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Type*"
+                android:textColor="#000000"
+                />
+            <RadioGroup
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Elder" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="careTaker" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="*Required"
+                android:textColor="#D8E6E7" />
+
+            <EditText
+                android:id="@+id/email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextline"
+                android:hint="Email address*"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="*Required"
+                android:textColor="#D8E6E7" />
+
+            <EditText
+                android:id="@+id/email_address_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextline"
+                android:hint="Repeat Email address*"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="*Required"
+                android:textColor="#D8E6E7" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextline"
+                android:hint="password*"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="*Required"
+                android:textColor="#D8E6E7" />
+
+            <EditText
+                android:id="@+id/password_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextline"
+                android:hint="Repeat Password"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="*Required"
+                android:textColor="#D8E6E7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active tw0-step verification?*"
+                android:textColor="#000000"
+                />
+            <RadioGroup
+                android:id="@+id/radioVerify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="yes" />
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="no" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:text="@string/next" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

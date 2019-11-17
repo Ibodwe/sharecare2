@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1054243044188",
+    "firebase_url": "https://sharecarev22.firebaseio.com",
+    "project_id": "sharecarev22",
+    "storage_bucket": "sharecarev22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054243044188:android:9889ba66b61373d9",
+        "android_client_info": {
+          "package_name": "com.vogella.android.retrofitgithub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054243044188-morudebm3g7q8ff6mg1scm8vrqu90c7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHr6zNXOKhM24ztsoq9ehbTUs7TbaUaRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054243044188-morudebm3g7q8ff6mg1scm8vrqu90c7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

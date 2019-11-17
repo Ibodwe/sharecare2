@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">ShareCareHealth</string>
+    <string name="title_activity_main_auth_menu">MainAuthMenu</string>
+
+    <!--authentication-->
+    <string name="btn_login">Login</string>
+    <string name="btn_signup">SignUp</string>
+    <string name="btn_reset_password">Reset password</string>
+    <string name="logo">Logo</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_email">Email</string>
+    <string name="msg_token_fmt">Token :</string>
+    <string name="enterEmail">Enter email address</string>
+    <string name="emptyField">Something is empty! Fill everything!</string>
+    <string name="enterUsername">Enter username</string>
+    <string name="enterPassword">Enter password</string>
+    <string name="passwordShort">Password too short, enter minimum 8 characters</string>
+    <string name="noInternet">No Internet access</string>
+    <string name="btn_link_to_login">Already registered? Log in!</string>
+    <string name="action_sign_in_short">Register</string>
+    <string name="hint_first_name">First name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_city">City</string>
+    <string name="hint_zipcode">Zipcode</string>
+    <string name="enterFirstName">Enter first name</string>
+    <string name="enterLastName">Enter last name</string>
+    <string name="enterAddress">Enter address</string>
+    <string name="enterCity">Enter city</string>
+    <string name="enterZipcode">Enter zipcode</string>
+    <string name="emailNotMatchingPattern">Email is not valid!</string>
+    <string name="passwortNotMatchingPattern">Password doesn\'t contain small, capital letter and number</string>
+    <string name="hint_confirm_email">Confirm email</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="first_name">First name:</string>
+    <string name="last_name">Last name:</string>
+    <string name="email">Email:</string>
+    <string name="address">Address:</string>
+    <string name="city">City:</string>
+    <string name="zipcode">Zipcode:</string>
+    <string name="emailsNotTheSame">Emails are not the same!</string>
+    <string name="passwordsNotTheSame">Passwords are not the same!</string>
+    <string name="poi_name_key">poiNamFe</string>
+    <string name="address_key">address</string>
+    <string name="poisearch_hint">Kind of place to add to your route</string>
+    <string name="no_search_results">No search results for \'%1$s\'. Please try another search term.</string>
+    <string name="add_to_my_route">Add to my route</string>
+    <string name="geocode_no_results">No geocoder results. Choose different location and try again.</string>
+    <string name="api_response_error">API response error: \'%1$s\'.</string>
+    <string name="default_notification_channel_name">"   "</string>
+    <string name="default_notification_channel_id">" "</string>
+    <string name="fcm_token">FCM Token: %s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

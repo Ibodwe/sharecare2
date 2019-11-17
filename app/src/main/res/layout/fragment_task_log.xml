@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".services.servicesService.CallLogFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#B3CBE6"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/current"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextline"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Current \nTask"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/remaining"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittextline"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Remaining \n Tasks"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                >
+            </TextView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/TaskFragment"
+            android:layout_width="match_parent"
+            android:layout_height="620dp">
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

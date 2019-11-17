@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    tools:context=".services.servicesService.CreateTask">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextline"
+                android:hint="title*"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColorHint="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="*Required"
+                android:textColor="#D8E6E7" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextline"
+                android:hint="description*"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColorHint="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="*Required"
+                android:textColor="#D8E6E7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittextline"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hour"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:hint="Expected hour*"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="17dp" />
+
+
+                <Spinner
+                    android:id="@+id/time_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:entries="@array/city"
+
+                    >
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="*Required"
+                android:textColor="#D8E6E7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/zipCode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/edittextline"
+                    android:hint="Zip Code*"
+                    android:padding="10dp"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/houseNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/edittextline"
+                    android:hint="House Number*"
+                    android:padding="10dp"
+                    android:textColorHint="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="*Required"
+                android:textColor="#D8E6E7" />
+
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edittextline"
+                android:hint="Address"
+                android:padding="10dp"
+                android:textColorHint="#000000"
+
+                />
+
+            <EditText
+                android:id="@+id/residence"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittextline"
+                android:hint="Place of Residence"
+                android:padding="10dp"
+                android:textColorHint="#000000" />
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:text="Confirm" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

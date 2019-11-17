@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.signup.SignUpSecondScreen">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="25dp"
+        android:theme="@style/MyActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/my_toolbar"
+        app:layout_constraintStart_toStartOf="@+id/my_toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add service"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextline"
+            android:hint="Title"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="*Required"
+            android:textColor="#D8E6E7" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextline"
+            android:hint="Description"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="*Required"
+            android:textColor="#D8E6E7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/zipCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/edittextline"
+                android:hint="Zip Code*"
+                android:padding="10dp"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:background="@drawable/edittextline"
+                android:hint="City*"
+                android:padding="10dp"
+                android:textColorHint="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="*Required"
+            android:textColor="#D8E6E7" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittextline"
+            android:hint="Address"
+            android:padding="10dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/cost"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittextline"
+            android:hint="Cost"
+            android:padding="10dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/duration"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittextline"
+            android:hint="Duration"
+            android:padding="10dp"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorAccent"
+            android:text="@string/next" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
